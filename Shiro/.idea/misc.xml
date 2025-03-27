@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ASMIdeaPluginConfiguration">
+    <asm skipDebug="false" skipFrames="false" skipCode="false" expandFrames="false" />
+    <groovy codeStyle="LEGACY" />
+  </component>
+  <component name="ASMPluginConfiguration">
+    <asm skipDebug="false" skipFrames="false" skipCode="false" expandFrames="false" />
+    <groovy codeStyle="LEGACY" />
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/CVE-2010-3863" />
+    <file type="web" url="file://$PROJECT_DIR$/CVE-2016-6802-Test" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/shiro-01-helloworld/pom.xml" />
+        <option value="$PROJECT_DIR$/shiro-02/pom.xml" />
+        <option value="$PROJECT_DIR$/shiro-01/pom.xml" />
+        <option value="$PROJECT_DIR$/demo/pom.xml" />
+        <option value="$PROJECT_DIR$/CVE-2010-3863/pom.xml" />
+        <option value="$PROJECT_DIR$/shiro-03/pom.xml" />
+        <option value="$PROJECT_DIR$/CVE-2016-6802/pom.xml" />
+        <option value="$PROJECT_DIR$/CVE-2016-4437/pom.xml" />
+        <option value="$PROJECT_DIR$/Test/pom.xml" />
+        <option value="$PROJECT_DIR$/SprintBootEnv/pom.xml" />
+        <option value="$PROJECT_DIR$/CVE-2019-12422/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringBoot/pom.xml" />
+        <option value="$PROJECT_DIR$/Tomcat/pom.xml" />
+        <option value="$PROJECT_DIR$/shiro-682/pom.xml" />
+        <option value="$PROJECT_DIR$/CVE-2020-1957/pom.xml" />
+        <option value="$PROJECT_DIR$/SprintBoot/pom.xml" />
+        <option value="$PROJECT_DIR$/SecureChatApp/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringShiroTest/pom.xml" />
+        <option value="$PROJECT_DIR$/CVE-2020-11989/pom.xml" />
+        <option value="$PROJECT_DIR$/CVE-2020-13933/pom.xml" />
+        <option value="$PROJECT_DIR$/CVE-2020-17510/pom.xml" />
+        <option value="$PROJECT_DIR$/CVE-2020-17523/pom.xml" />
+        <option value="$PROJECT_DIR$/CVE-2021-41303/pom.xml" />
+        <option value="$PROJECT_DIR$/CVE-2022-32532/pom.xml" />
+        <option value="$PROJECT_DIR$/CVE-2022-40664/pom.xml" />
+        <option value="$PROJECT_DIR$/CVE-2023-34478/pom.xml" />
+        <option value="$PROJECT_DIR$/CVE-2023-46750/pom.xml" />
+        <option value="$PROJECT_DIR$/CVE-2023-46749/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/SecureChatApp/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringBoot/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringShiroTest/pom.xml" />
+        <option value="$PROJECT_DIR$/SprintBootEnv/pom.xml" />
+        <option value="$PROJECT_DIR$/demo/pom.xml" />
+        <option value="$PROJECT_DIR$/env-study/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8.0_121" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

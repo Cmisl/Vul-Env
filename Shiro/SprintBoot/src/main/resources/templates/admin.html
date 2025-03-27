@@ -1,0 +1,74 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="zh">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>管理员首页</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<h1>欢迎，管理员！</h1>-->
+<!--<nav>-->
+<!--    <ul>-->
+<!--        <li><a href="/admin/manage-books">管理图书</a></li>-->
+<!--        <li><a href="/logout">退出</a></li>-->
+<!--    </ul>-->
+<!--</nav>-->
+<!--</body>-->
+<!--</html>-->
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>管理员首页</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+            margin-top: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 15px 0;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+            background-color: #007bff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        a:hover {
+            background-color: #0056b3;
+        }
+        .logout-link {
+            background-color: #dc3545;
+        }
+        .logout-link:hover {
+            background-color: #c82333;
+        }
+    </style>
+</head>
+<body>
+<h1>欢迎，管理员！</h1>
+<nav>
+    <ul>
+        <li><a href="/admin/manage-books"><i class="fas fa-book"></i> 管理图书</a></li>
+        <li><a class="logout-link" href="/logout"><i class="fas fa-sign-out-alt"></i> 退出</a></li>
+    </ul>
+</nav>
+</body>
+</html>

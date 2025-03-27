@@ -1,0 +1,135 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="zh">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>图书管理</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<h1>图书管理</h1>-->
+<!--<a href="/admin/books/add-book">添加新图书</a>-->
+<!--<hr>-->
+<!--<table border="1">-->
+<!--    <thead>-->
+<!--    <tr>-->
+<!--        <th>书名</th>-->
+<!--        <th>作者</th>-->
+<!--        <th>ISBN</th>-->
+<!--        <th>借阅状态</th>-->
+<!--        <th>操作</th>-->
+<!--    </tr>-->
+<!--    </thead>-->
+<!--    <tbody>-->
+<!--    <th:block th:each="book : ${books}">-->
+<!--        <tr>-->
+<!--            <td th:text="${book.title}"></td>-->
+<!--            <td th:text="${book.author}"></td>-->
+<!--            <td th:text="${book.isbn}"></td>-->
+<!--            <td>-->
+<!--                <span th:text="${book.isBorrowed ? '已借出' : '可借阅'}"></span>-->
+<!--            </td>-->
+<!--            <td>-->
+<!--                <a th:href="@{/admin/books/delete-book/{id}(id=${book.id})}">删除</a>-->
+<!--            </td>-->
+<!--        </tr>-->
+<!--    </th:block>-->
+<!--    </tbody>-->
+<!--</table>-->
+<!--</body>-->
+<!--</html>-->
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图书管理</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+            background-color: #007bff;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        a:hover {
+            background-color: #0056b3;
+        }
+        hr {
+            margin: 20px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #e7f1ff;
+        }
+        .status-borrowed {
+            color: red;
+        }
+        .status-available {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+<h1>图书管理</h1>
+<div style="text-align: center;">
+    <a href="/admin/books/add-book"><i class="fas fa-plus"></i> 添加新图书</a>
+</div>
+<hr>
+<table>
+    <thead>
+    <tr>
+        <th>书名</th>
+        <th>作者</th>
+        <th>ISBN</th>
+        <th>借阅状态</th>
+        <th>操作</th>
+    </tr>
+    </thead>
+    <tbody>
+    <th:block th:each="book : ${books}">
+        <tr>
+            <td th:text="${book.title}"></td>
+            <td th:text="${book.author}"></td>
+            <td th:text="${book.isbn}"></td>
+            <td>
+                        <span th:class="${book.isBorrowed ? 'status-borrowed' : 'status-available'}"
+                              th:text="${book.isBorrowed ? '已借出' : '可借阅'}"></span>
+            </td>
+            <td>
+                <a th:href="@{/admin/books/delete-book/{id}(id=${book.id})}" style="color: red;">
+                    <i class="fas fa-trash-alt"></i> 删除
+                </a>
+            </td>
+        </tr>
+    </th:block>
+    </tbody>
+</table>
+</body>
+</html>
